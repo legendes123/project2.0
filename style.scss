@@ -347,7 +347,7 @@
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 2vh;
+                    font-size: calc(1em + 0.1vw);
                     letter-spacing: 0.2px;
                     color: #737373;
                     flex: none;
@@ -363,7 +363,7 @@
                     font-family: 'Martel';
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 2.5vh;
+                    font-size: calc(1em + 0.5vw);
                     letter-spacing: 0.1px;
                     color: #252B42;
                     flex: none;
@@ -398,7 +398,7 @@
         width: 100%;
         .title{
             height: 50%;
-            width: 30%;
+            width: 50%;
             margin: 0 auto;
             p{
                 font-family: "Open Sans";
@@ -470,7 +470,7 @@
                         font-family: "Open Sans";
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 2vh;
+                        font-size: calc(1em + 0.1vw);
                         letter-spacing: 0.2px;
                         color: #737373;
                         -webkit-box-flex: 0;
@@ -488,7 +488,7 @@
                         font-family: "Martel";
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 5vh;
+                        font-size: calc(1em + 1.5vw);
                         line-height: 50px;
                         letter-spacing: 0.2px;
                         color: #252B42;
@@ -511,7 +511,7 @@
                                 font-family: 'Martel';
                                 font-style: normal;
                                 font-weight: 700;
-                                font-size: 2.5vh;
+                                font-size: calc(1em + 0.5vw);
                                 letter-spacing: 0.1px;
                                 color: #252B42;
                                 flex: none;
@@ -523,7 +523,7 @@
                                 font-family: 'Open Sans';
                                 font-style: normal;
                                 font-weight: 700;
-                                font-size: 2vh;
+                                font-size: calc(1em + 0.1vw);
                                 letter-spacing: 0.2px;
                                 color: #737373;
                                 flex: none;
@@ -769,23 +769,12 @@
                     color: #252B42;
                     text-align: center;
                 }
-                .location__item__p{
-                    font-family: 'Open Sans';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 1.5vh;
-                    text-align: center;
-                    letter-spacing: 0.2px;
-
-                    color: #252B42;
-                    
-
-                }
+                
                 .location__item__p{
                     font-family: 'Martel';
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 2vh;
+                    font-size: calc(1em + 0.1vw);
                     text-align: center;
                     letter-spacing: 0.1px;
                     color: #252B42;
@@ -837,7 +826,7 @@
                 font-family: 'Martel';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 3vh;
+                font-size: calc(1em + 0.5vw);
                 letter-spacing: 0.1px;           
                 color: #252B42;
                 flex: none;
@@ -851,7 +840,7 @@
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 2vh;
+                font-size: calc(1em + 0.1vw);
                 letter-spacing: 0.2px;
                 color: #737373;
                 flex: none;
@@ -1038,11 +1027,14 @@
     .content{
         height: 800px;
         .text{
-            height: 10%;
+            height: 20%;
             display: block;
+            width: 75%;
+            margin: 0 auto;
             
         }
         .content__under{
+            height: 80%;
             display: block;
             .content__container{
                 display: block;
@@ -1057,9 +1049,13 @@
         
     }
     .logo{
-        height: 1800px;
-        .content-main-top{
+        height: 1900px;
+        .text{
             height: 15%;
+            .title{
+                width: 75%;
+                margin: 0 auto;
+            }
         }
         .logo__under{
             height: 85%;
@@ -1070,12 +1066,14 @@
                 width: 70%;
                 .logo__item{
                     height: 25%;
-                    width: 50%;
+                    width: 100%;
                     text-align: center;
                     margin: 0 auto;
                     .content-main-container-img{
                         img{
                             margin: 25px 10px;
+                            min-width: 25%;
+                            min-height: 35%;
 
                         }
                     }
@@ -1089,29 +1087,33 @@
     .about{
         margin: 50px 0;
         height: 1000px;
-        .contentWho-top{
+        .text{
             height: 25%;
+        }
+        .title{
+            width: 75%;
+            margin: 0 auto;
         }
         .about__container{
             display: block;
             height: 75%;
             .about__top{
-                height: 40%;
+                height: 25%;
                 width: 100%;
                 .about__logo{
-                    width: 50%;
-                    margin: 30% auto;
-                    height: 70%;
+                    width: 35%;
+                    margin: 10% auto;
+                    height: 65%;
                     img{
-                        width: 50%;
-                        height: 45%;
-                        margin: 0 25%;
+                        min-width: 50%;
+                        min-height: 45%;
+                        margin: 0 10%;
                     }
                 }
                 
             }
             .about__under{
-                height: 60%;
+                height: 75%;
                 width: 100%;
                 .about__text{
                     width: 50%;
@@ -1166,12 +1168,14 @@
     }
     .location{
         height: 1400px;
-        .location-top{
-            height: 20%;
+        .text{
+            height: 10%;
+            width: 75%;
+            margin: 0 auto;
 
         }
         .location__card{
-            height: 80%;
+            height: 90%;
             .location__container{
                 display: block;
                 .location__item{
@@ -1274,12 +1278,13 @@
 }
 @media (max-width:767px){
 
-    .contentWho-top{
+    .text{
         height: 30%;
     }
     .about__container{
         height: 70%;
     }
+    
     
 
 
@@ -1295,12 +1300,7 @@
         margin: 15% 18%;
 
     }
-    .content-main-container-img{
-        img{
-            width: 95%;
-            height: 40%;
-        }
-    }
+    
     
     
 }

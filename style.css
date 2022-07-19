@@ -378,7 +378,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: calc(1em + 0.1vw);
   letter-spacing: 0.2px;
   color: #737373;
   -webkit-box-flex: 0;
@@ -398,7 +398,7 @@
   font-family: "Martel";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5vh;
+  font-size: calc(1em + 0.5vw);
   letter-spacing: 0.1px;
   color: #252B42;
   -webkit-box-flex: 0;
@@ -430,7 +430,7 @@
 }
 .about .text .title {
   height: 50%;
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 }
 .about .text .title p {
@@ -505,7 +505,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: calc(1em + 0.1vw);
   letter-spacing: 0.2px;
   color: #737373;
   -webkit-box-flex: 0;
@@ -522,7 +522,7 @@
   font-family: "Martel";
   font-style: normal;
   font-weight: 700;
-  font-size: 5vh;
+  font-size: calc(1em + 1.5vw);
   line-height: 50px;
   letter-spacing: 0.2px;
   color: #252B42;
@@ -550,7 +550,7 @@
   font-family: "Martel";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5vh;
+  font-size: calc(1em + 0.5vw);
   letter-spacing: 0.1px;
   color: #252B42;
   -webkit-box-flex: 0;
@@ -566,7 +566,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 2vh;
+  font-size: calc(1em + 0.1vw);
   letter-spacing: 0.2px;
   color: #737373;
   -webkit-box-flex: 0;
@@ -797,19 +797,10 @@
   text-align: center;
 }
 .location .location__card .location__container .location__item .location__item__p {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5vh;
-  text-align: center;
-  letter-spacing: 0.2px;
-  color: #252B42;
-}
-.location .location__card .location__container .location__item .location__item__p {
   font-family: "Martel";
   font-style: normal;
   font-weight: 700;
-  font-size: 2vh;
+  font-size: calc(1em + 0.1vw);
   text-align: center;
   letter-spacing: 0.1px;
   color: #252B42;
@@ -870,7 +861,7 @@
   font-family: "Martel";
   font-style: normal;
   font-weight: 700;
-  font-size: 3vh;
+  font-size: calc(1em + 0.5vw);
   letter-spacing: 0.1px;
   color: #252B42;
   -webkit-box-flex: 0;
@@ -887,7 +878,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: calc(1em + 0.1vw);
   letter-spacing: 0.2px;
   color: #737373;
   -webkit-box-flex: 0;
@@ -1059,10 +1050,13 @@
     height: 800px;
   }
   .content .text {
-    height: 10%;
+    height: 20%;
     display: block;
+    width: 75%;
+    margin: 0 auto;
   }
   .content .content__under {
+    height: 80%;
     display: block;
   }
   .content .content__under .content__container {
@@ -1075,11 +1069,15 @@
   }
 
   .logo {
-    height: 1800px;
+    height: 1900px;
     display: block;
   }
-  .logo .content-main-top {
+  .logo .text {
     height: 15%;
+  }
+  .logo .text .title {
+    width: 75%;
+    margin: 0 auto;
   }
   .logo .logo__under {
     height: 85%;
@@ -1090,41 +1088,47 @@
   }
   .logo .logo__under .logo__container .logo__item {
     height: 25%;
-    width: 50%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
   }
   .logo .logo__under .logo__container .logo__item .content-main-container-img img {
     margin: 25px 10px;
+    min-width: 25%;
+    min-height: 35%;
   }
 
   .about {
     margin: 50px 0;
     height: 1000px;
   }
-  .about .contentWho-top {
+  .about .text {
     height: 25%;
+  }
+  .about .title {
+    width: 75%;
+    margin: 0 auto;
   }
   .about .about__container {
     display: block;
     height: 75%;
   }
   .about .about__container .about__top {
-    height: 40%;
+    height: 25%;
     width: 100%;
   }
   .about .about__container .about__top .about__logo {
-    width: 50%;
-    margin: 30% auto;
-    height: 70%;
+    width: 35%;
+    margin: 10% auto;
+    height: 65%;
   }
   .about .about__container .about__top .about__logo img {
-    width: 50%;
-    height: 45%;
-    margin: 0 25%;
+    min-width: 50%;
+    min-height: 45%;
+    margin: 0 10%;
   }
   .about .about__container .about__under {
-    height: 60%;
+    height: 75%;
     width: 100%;
   }
   .about .about__container .about__under .about__text {
@@ -1176,11 +1180,13 @@
   .location {
     height: 1400px;
   }
-  .location .location-top {
-    height: 20%;
+  .location .text {
+    height: 10%;
+    width: 75%;
+    margin: 0 auto;
   }
   .location .location__card {
-    height: 80%;
+    height: 90%;
   }
   .location .location__card .location__container {
     display: block;
@@ -1259,7 +1265,7 @@
   }
 }
 @media (max-width: 767px) {
-  .contentWho-top {
+  .text {
     height: 30%;
   }
 
@@ -1272,10 +1278,5 @@
     height: 40%;
     width: 75%;
     margin: 15% 18%;
-  }
-
-  .content-main-container-img img {
-    width: 95%;
-    height: 40%;
   }
 }
